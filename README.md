@@ -19,3 +19,7 @@ You can use this code to walk through and see how to embed charts (unauthenticat
 2. charts SDK
 3. filtering for specific countries
 4. dark / light mode
+
+**To walk through the code:**
+__1. Navigate to /pages/index.js to view the code on how to use the iFrame embedding of charts and apply filtering on the iFrames__
+__2. Navigate to /pages/charts.js to view the code on how to use the Charts SDK to embed charts and apply filtering on the embedded charts__
