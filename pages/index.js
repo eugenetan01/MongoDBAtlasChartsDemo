@@ -17,6 +17,7 @@ export default function Home() {
           "shipping-source.country": value,
         };
 
+  // Set filter and dark / light mode within the connection string
   let conn_charts =
     "https://charts.mongodb.com/charts-eugene-wbjar/embed/charts?id=624c1cab-b920-4b80-8a3f-716b757c44ba&filter=" +
     JSON.stringify(filter) +
@@ -61,9 +62,8 @@ export default function Home() {
             </Select>
           </Grid>
         </Grid>
-
         <br />
-
+        {/* See here on how to embed Chart via iframe */}
         <iframe
           width="50%"
           height="600"

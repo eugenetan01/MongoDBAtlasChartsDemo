@@ -11,7 +11,7 @@ export default function Home() {
   let [darkTheme, setDarkTheme] = useState("light");
   const [value, setValue] = useState("All");
 
-  //Specify filter here
+  // Build filters here to view the chart according to speific filter
   let filter =
     value == "All"
       ? {}
@@ -59,15 +59,14 @@ export default function Home() {
             </Select>
           </Grid>
         </Grid>
-
         <br />
-
+        {/*See here for code to embed chart via SDK */}
         <Chart
           height={"600px"}
           width={"800px"}
-          filter={filter}
+          filter={filter} // add filter to chart here
           chartId={"624c1cab-b920-4b80-8a3f-716b757c44ba"}
-          darkTheme={darkTheme}
+          darkTheme={darkTheme} // set dark or light mode here
         />
       </main>
       <footer className={styles.footer}>
